@@ -7,9 +7,12 @@ import com.java.scogen.metaData.EmployeeNameList;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
+import org.apache.spark.sql.sources.In;
 
+import java.util.Collection;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import static org.apache.spark.sql.functions.*;
 
@@ -46,13 +49,18 @@ public class ExecuteProcess {
 
         //# Write a program to find dept with max emp with age > 35 & gratuity < 800
 
-        empDeptDataset.join(empFinance,"empid")
+        Dataset<Row> employePerDept = empDeptDataset.join(empFinance,"empid")
                 .filter(col("age").$greater(35).and(col("gratuity").$less(800)))
                 .groupBy("deptid")
                 .agg(
                         count("empid").as("numPeople")
-                ).orderBy(desc("numPeople"))
-                .limit(1).show();
+                );
+
+        Long maxPeopleInADept = employePerDept.agg(max("numPeople").as("numPeople"))
+                .collectAsList().get(0).<Long>getAs("numPeople");
+
+        employePerDept.filter(col("numPeople").equalTo(maxPeopleInADept))
+                .show();
 
     }
 }
