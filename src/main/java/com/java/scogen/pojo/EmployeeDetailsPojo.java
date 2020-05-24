@@ -1,6 +1,6 @@
 package com.java.scogen.pojo;
 
-import com.java.scogen.dataGenerator.EmployeeNameList;
+import com.java.scogen.metaData.EmployeeNameList;
 
 public class EmployeeDetailsPojo {
 
@@ -12,7 +12,7 @@ public class EmployeeDetailsPojo {
     public EmployeeDetailsPojo(String fname) {
         this.fname = fname;
         this.lname = EmployeeNameList.randomNameGenerator();
-        this.empid = EmployeeNameList.randomIDGenerator();
+        this.empid = EmployeeNameList.serialIDGenerator();
         this.age = EmployeeNameList.randomAgeGenerator();
     }
 

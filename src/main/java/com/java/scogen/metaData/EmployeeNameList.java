@@ -1,4 +1,4 @@
-package com.java.scogen.dataGenerator;
+package com.java.scogen.metaData;
 
 import java.util.HashSet;
 import java.util.Random;
@@ -30,7 +30,7 @@ public class EmployeeNameList {
                 .toString();
     }
 
-    public static String randomIDGenerator() {
+    public static String serialIDGenerator() {
         return Integer.toString(counter++);
     }
 
