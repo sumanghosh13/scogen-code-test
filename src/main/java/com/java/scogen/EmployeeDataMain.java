@@ -1,6 +1,6 @@
 package com.java.scogen;
 
-import com.java.scogen.configProvider.SparkSessionProvider;
+import com.java.scogen.configprovider.SparkSessionProvider;
 import com.java.scogen.process.ExecuteProcess;
 
 public class EmployeeDataMain extends SparkSessionProvider {

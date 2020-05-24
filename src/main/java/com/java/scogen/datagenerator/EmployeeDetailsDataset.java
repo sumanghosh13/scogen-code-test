@@ -1,4 +1,4 @@
-package com.java.scogen.dataGenerator;
+package com.java.scogen.datagenerator;
 
 import com.java.scogen.pojo.EmployeeDetailsPojo;
 import org.apache.spark.sql.Dataset;

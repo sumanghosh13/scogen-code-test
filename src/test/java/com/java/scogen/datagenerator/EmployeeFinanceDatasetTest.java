@@ -1,7 +1,7 @@
-package com.java.scogen.dataGenerator;
+package com.java.scogen.datagenerator;
 
 import com.java.scogen.SparkTestSessionGenerator;
-import com.java.scogen.metaData.EmployeeNameList;
+import com.java.scogen.metadata.EmployeeNameList;
 import org.apache.spark.sql.Column;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
@@ -50,7 +50,7 @@ public class EmployeeFinanceDatasetTest extends SparkTestSessionGenerator {
     }
 
     @Test
-    public void employeeaBasicRangeTest()
+    public void employeesBasicRangeTest()
     {
         initilize();
         boolean result = employeeFinanceDataset.select(new Column("ctc"),new Column("basic"))

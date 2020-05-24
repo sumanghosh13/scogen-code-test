@@ -1,18 +1,15 @@
 package com.java.scogen.process;
 
-import com.java.scogen.dataGenerator.EmployeeDeptDataset;
-import com.java.scogen.dataGenerator.EmployeeDetailsDataset;
-import com.java.scogen.dataGenerator.EmployeeFinanceDataset;
-import com.java.scogen.metaData.EmployeeNameList;
+import com.java.scogen.datagenerator.EmployeeDeptDataset;
+import com.java.scogen.datagenerator.EmployeeDetailsDataset;
+import com.java.scogen.datagenerator.EmployeeFinanceDataset;
+import com.java.scogen.metadata.EmployeeNameList;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
-import org.apache.spark.sql.sources.In;
 
-import java.util.Collection;
 import java.util.List;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 import static org.apache.spark.sql.functions.*;
 

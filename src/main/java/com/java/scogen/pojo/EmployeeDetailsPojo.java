@@ -1,6 +1,6 @@
 package com.java.scogen.pojo;
 
-import com.java.scogen.metaData.EmployeeNameList;
+import com.java.scogen.metadata.EmployeeNameList;
 
 public class EmployeeDetailsPojo {
 

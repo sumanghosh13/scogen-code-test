@@ -1,4 +1,4 @@
-package com.java.scogen.dataGenerator;
+package com.java.scogen.datagenerator;
 
 import com.java.scogen.pojo.EmployeeFinancePojo;
 import org.apache.spark.sql.Dataset;
@@ -16,9 +16,9 @@ public class EmployeeFinanceDataset {
         this.spark= spark;
     }
 
-    public Dataset<Row> employeeFinanceData(List<String> empNames)
+    public Dataset<Row> employeeFinanceData(List<String> empIds)
     {
-       return spark.createDataFrame(empNames.stream().map(EmployeeFinancePojo::new)
+       return spark.createDataFrame(empIds.stream().map(EmployeeFinancePojo::new)
                 .collect(Collectors.toList()),EmployeeFinancePojo.class);
     }
 

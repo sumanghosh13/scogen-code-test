@@ -1,4 +1,4 @@
-package com.java.scogen.dataGenerator;
+package com.java.scogen.datagenerator;
 
 import com.java.scogen.pojo.DeptPojo;
 import com.java.scogen.constants.DeptID;

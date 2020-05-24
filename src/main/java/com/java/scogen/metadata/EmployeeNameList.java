@@ -1,4 +1,4 @@
-package com.java.scogen.metaData;
+package com.java.scogen.metadata;
 
 import java.util.HashSet;
 import java.util.Random;

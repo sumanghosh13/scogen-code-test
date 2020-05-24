@@ -1,4 +1,4 @@
-package com.java.scogen.dataGenerator;
+package com.java.scogen.datagenerator;
 
 import com.java.scogen.SparkTestSessionGenerator;
 import org.apache.spark.sql.Column;
@@ -10,7 +10,7 @@ import org.junit.Test;
 public class DeptDetailsTest extends SparkTestSessionGenerator
 {
 
-    private Dataset<Row> deptDataset = new DeptDetailsDataset(getSpark()).deptDataDataset().cache();;
+    private Dataset<Row> deptDataset = new DeptDetailsDataset(getSpark()).deptDataDataset().cache();
 
     @Test
     public void countTest()

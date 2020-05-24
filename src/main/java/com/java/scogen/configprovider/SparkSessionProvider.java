@@ -1,4 +1,4 @@
-package com.java.scogen.configProvider;
+package com.java.scogen.configprovider;
 
 import org.apache.spark.sql.SparkSession;
 
