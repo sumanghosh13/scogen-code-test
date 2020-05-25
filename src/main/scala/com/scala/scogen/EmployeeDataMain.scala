@@ -29,8 +29,6 @@ object EmployeeDataMain extends SparkSessionProvider {
       .filter(col("age").$greater(35).and(col("gratuity").$less(800)))
       .groupBy("deptid").agg(count("empid").as("numPeople"))
 
-    employePerDept.show()
-
     val maxPeopleInADept = employePerDept
       .agg(max("numPeople").as("numPeople"))
       .collectAsList.get(0).getAs[Long]("numPeople")
