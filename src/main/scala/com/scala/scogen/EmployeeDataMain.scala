@@ -1,8 +1,9 @@
 package com.scala.scogen
 
 import com.scala.scogen.configprovider.SparkSessionProvider
-import com.scala.scogen.datagenerator.{EmployeeDeptDataset, EmployeeDetailsDataset, EmployeeFinanceDataset}
+import com.scala.scogen.datagenerator.{DetpSelect, EmployeeDeptDataset, EmployeeDetailsDataset, EmployeeFinanceDataset}
 import com.scala.scogen.metaData.EmployeeNameList
+import org.apache.spark.sql.{Dataset, Row}
 import org.apache.spark.sql.functions.{col, count, max}
 
 object EmployeeDataMain extends SparkSessionProvider {
@@ -25,11 +26,9 @@ object EmployeeDataMain extends SparkSessionProvider {
       .show(500)
 
     //# Write a program to find dept with max emp with age > 35 & gratuity < 800
-    val employePerDept = employeeDeptDs.join(empFinance, "empid")
-      .filter(col("age").$greater(35).and(col("gratuity").$less(800)))
-      .groupBy("deptid").agg(count("empid").as("numPeople"))
-
-    val maxPeopleInADept = employePerDept
+    val employePerDept = new DetpSelect().filterAndreturnDept(employeeDeptDs.join(empFinance, "empid"))
+    val empDataBeforeGroup = employePerDept.groupBy("deptid").agg(count("empid").as("numPeople"))
+    val maxPeopleInADept = empDataBeforeGroup
       .agg(max("numPeople").as("numPeople"))
       .collectAsList.get(0).getAs[Long]("numPeople")
 

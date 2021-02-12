@@ -53,6 +53,8 @@ public class ExecuteProcess {
                         count("empid").as("numPeople")
                 );
 
+        employePerDept.show();
+
         Long maxPeopleInADept = employePerDept.agg(max("numPeople").as("numPeople"))
                 .collectAsList().get(0).<Long>getAs("numPeople");
 

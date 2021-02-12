@@ -1,0 +1,650 @@
+{
+  "covid" : {
+    "mappings" : {
+      "_meta" : {
+        "created_by" : "ml-file-data-visualizer"
+      },
+      "properties" : {
+        "@timestamp" : {
+          "type" : "date"
+        },
+        "Afghanistan" : {
+          "type" : "long"
+        },
+        "Albania" : {
+          "type" : "long"
+        },
+        "Algeria" : {
+          "type" : "long"
+        },
+        "Andorra" : {
+          "type" : "long"
+        },
+        "Angola" : {
+          "type" : "long"
+        },
+        "Anguilla" : {
+          "type" : "long"
+        },
+        "Antigua and Barbuda" : {
+          "type" : "long"
+        },
+        "Argentina" : {
+          "type" : "long"
+        },
+        "Armenia" : {
+          "type" : "long"
+        },
+        "Aruba" : {
+          "type" : "long"
+        },
+        "Australia" : {
+          "type" : "long"
+        },
+        "Austria" : {
+          "type" : "long"
+        },
+        "Azerbaijan" : {
+          "type" : "long"
+        },
+        "Bahamas" : {
+          "type" : "long"
+        },
+        "Bahrain" : {
+          "type" : "long"
+        },
+        "Bangladesh" : {
+          "type" : "long"
+        },
+        "Barbados" : {
+          "type" : "long"
+        },
+        "Belarus" : {
+          "type" : "long"
+        },
+        "Belgium" : {
+          "type" : "long"
+        },
+        "Belize" : {
+          "type" : "long"
+        },
+        "Benin" : {
+          "type" : "long"
+        },
+        "Bermuda" : {
+          "type" : "long"
+        },
+        "Bhutan" : {
+          "type" : "long"
+        },
+        "Bolivia" : {
+          "type" : "long"
+        },
+        "Bonaire Sint Eustatius and Saba" : {
+          "type" : "long"
+        },
+        "Bosnia and Herzegovina" : {
+          "type" : "long"
+        },
+        "Botswana" : {
+          "type" : "long"
+        },
+        "Brazil" : {
+          "type" : "long"
+        },
+        "British Virgin Islands" : {
+          "type" : "long"
+        },
+        "Brunei" : {
+          "type" : "long"
+        },
+        "Bulgaria" : {
+          "type" : "long"
+        },
+        "Burkina Faso" : {
+          "type" : "long"
+        },
+        "Burundi" : {
+          "type" : "long"
+        },
+        "Cambodia" : {
+          "type" : "long"
+        },
+        "Cameroon" : {
+          "type" : "long"
+        },
+        "Canada" : {
+          "type" : "long"
+        },
+        "Cape Verde" : {
+          "type" : "long"
+        },
+        "Cayman Islands" : {
+          "type" : "long"
+        },
+        "Central African Republic" : {
+          "type" : "long"
+        },
+        "Chad" : {
+          "type" : "long"
+        },
+        "Chile" : {
+          "type" : "long"
+        },
+        "China" : {
+          "type" : "long"
+        },
+        "Colombia" : {
+          "type" : "long"
+        },
+        "Comoros" : {
+          "type" : "long"
+        },
+        "Congo" : {
+          "type" : "long"
+        },
+        "Costa Rica" : {
+          "type" : "long"
+        },
+        "Cote d'Ivoire" : {
+          "type" : "long"
+        },
+        "Croatia" : {
+          "type" : "long"
+        },
+        "Cuba" : {
+          "type" : "long"
+        },
+        "Curacao" : {
+          "type" : "long"
+        },
+        "Cyprus" : {
+          "type" : "long"
+        },
+        "Czech Republic" : {
+          "type" : "long"
+        },
+        "Democratic Republic of Congo" : {
+          "type" : "long"
+        },
+        "Denmark" : {
+          "type" : "long"
+        },
+        "Djibouti" : {
+          "type" : "long"
+        },
+        "Dominica" : {
+          "type" : "long"
+        },
+        "Dominican Republic" : {
+          "type" : "long"
+        },
+        "Ecuador" : {
+          "type" : "long"
+        },
+        "Egypt" : {
+          "type" : "long"
+        },
+        "El Salvador" : {
+          "type" : "long"
+        },
+        "Equatorial Guinea" : {
+          "type" : "long"
+        },
+        "Eritrea" : {
+          "type" : "long"
+        },
+        "Estonia" : {
+          "type" : "long"
+        },
+        "Ethiopia" : {
+          "type" : "long"
+        },
+        "Faeroe Islands" : {
+          "type" : "long"
+        },
+        "Falkland Islands" : {
+          "type" : "long"
+        },
+        "Fiji" : {
+          "type" : "long"
+        },
+        "Finland" : {
+          "type" : "long"
+        },
+        "France" : {
+          "type" : "long"
+        },
+        "French Polynesia" : {
+          "type" : "long"
+        },
+        "Gabon" : {
+          "type" : "long"
+        },
+        "Gambia" : {
+          "type" : "long"
+        },
+        "Georgia" : {
+          "type" : "long"
+        },
+        "Germany" : {
+          "type" : "long"
+        },
+        "Ghana" : {
+          "type" : "long"
+        },
+        "Gibraltar" : {
+          "type" : "long"
+        },
+        "Greece" : {
+          "type" : "long"
+        },
+        "Greenland" : {
+          "type" : "long"
+        },
+        "Grenada" : {
+          "type" : "long"
+        },
+        "Guam" : {
+          "type" : "long"
+        },
+        "Guatemala" : {
+          "type" : "long"
+        },
+        "Guernsey" : {
+          "type" : "long"
+        },
+        "Guinea" : {
+          "type" : "long"
+        },
+        "Guinea-Bissau" : {
+          "type" : "long"
+        },
+        "Guyana" : {
+          "type" : "long"
+        },
+        "Haiti" : {
+          "type" : "long"
+        },
+        "Honduras" : {
+          "type" : "long"
+        },
+        "Hungary" : {
+          "type" : "long"
+        },
+        "Iceland" : {
+          "type" : "long"
+        },
+        "India" : {
+          "type" : "long"
+        },
+        "Indonesia" : {
+          "type" : "long"
+        },
+        "International" : {
+          "type" : "long"
+        },
+        "Iran" : {
+          "type" : "long"
+        },
+        "Iraq" : {
+          "type" : "long"
+        },
+        "Ireland" : {
+          "type" : "long"
+        },
+        "Isle of Man" : {
+          "type" : "long"
+        },
+        "Israel" : {
+          "type" : "long"
+        },
+        "Italy" : {
+          "type" : "long"
+        },
+        "Jamaica" : {
+          "type" : "long"
+        },
+        "Japan" : {
+          "type" : "long"
+        },
+        "Jersey" : {
+          "type" : "long"
+        },
+        "Jordan" : {
+          "type" : "long"
+        },
+        "Kazakhstan" : {
+          "type" : "long"
+        },
+        "Kenya" : {
+          "type" : "long"
+        },
+        "Kosovo" : {
+          "type" : "long"
+        },
+        "Kuwait" : {
+          "type" : "long"
+        },
+        "Kyrgyzstan" : {
+          "type" : "long"
+        },
+        "Laos" : {
+          "type" : "long"
+        },
+        "Latvia" : {
+          "type" : "long"
+        },
+        "Lebanon" : {
+          "type" : "long"
+        },
+        "Lesotho" : {
+          "type" : "long"
+        },
+        "Liberia" : {
+          "type" : "long"
+        },
+        "Libya" : {
+          "type" : "long"
+        },
+        "Liechtenstein" : {
+          "type" : "long"
+        },
+        "Lithuania" : {
+          "type" : "long"
+        },
+        "Luxembourg" : {
+          "type" : "long"
+        },
+        "Macedonia" : {
+          "type" : "long"
+        },
+        "Madagascar" : {
+          "type" : "long"
+        },
+        "Malawi" : {
+          "type" : "long"
+        },
+        "Malaysia" : {
+          "type" : "long"
+        },
+        "Maldives" : {
+          "type" : "long"
+        },
+        "Mali" : {
+          "type" : "long"
+        },
+        "Malta" : {
+          "type" : "long"
+        },
+        "Mauritania" : {
+          "type" : "long"
+        },
+        "Mauritius" : {
+          "type" : "long"
+        },
+        "Mexico" : {
+          "type" : "long"
+        },
+        "Moldova" : {
+          "type" : "long"
+        },
+        "Monaco" : {
+          "type" : "long"
+        },
+        "Mongolia" : {
+          "type" : "long"
+        },
+        "Montenegro" : {
+          "type" : "long"
+        },
+        "Montserrat" : {
+          "type" : "long"
+        },
+        "Morocco" : {
+          "type" : "long"
+        },
+        "Mozambique" : {
+          "type" : "long"
+        },
+        "Myanmar" : {
+          "type" : "long"
+        },
+        "Namibia" : {
+          "type" : "long"
+        },
+        "Nepal" : {
+          "type" : "long"
+        },
+        "Netherlands" : {
+          "type" : "long"
+        },
+        "New Caledonia" : {
+          "type" : "long"
+        },
+        "New Zealand" : {
+          "type" : "long"
+        },
+        "Nicaragua" : {
+          "type" : "long"
+        },
+        "Niger" : {
+          "type" : "long"
+        },
+        "Nigeria" : {
+          "type" : "long"
+        },
+        "Northern Mariana Islands" : {
+          "type" : "long"
+        },
+        "Norway" : {
+          "type" : "long"
+        },
+        "Oman" : {
+          "type" : "long"
+        },
+        "Pakistan" : {
+          "type" : "long"
+        },
+        "Palestine" : {
+          "type" : "long"
+        },
+        "Panama" : {
+          "type" : "long"
+        },
+        "Papua New Guinea" : {
+          "type" : "long"
+        },
+        "Paraguay" : {
+          "type" : "long"
+        },
+        "Peru" : {
+          "type" : "long"
+        },
+        "Philippines" : {
+          "type" : "long"
+        },
+        "Poland" : {
+          "type" : "long"
+        },
+        "Portugal" : {
+          "type" : "long"
+        },
+        "Puerto Rico" : {
+          "type" : "long"
+        },
+        "Qatar" : {
+          "type" : "long"
+        },
+        "Romania" : {
+          "type" : "long"
+        },
+        "Russia" : {
+          "type" : "long"
+        },
+        "Rwanda" : {
+          "type" : "long"
+        },
+        "Saint Kitts and Nevis" : {
+          "type" : "long"
+        },
+        "Saint Lucia" : {
+          "type" : "long"
+        },
+        "Saint Vincent and the Grenadines" : {
+          "type" : "long"
+        },
+        "San Marino" : {
+          "type" : "long"
+        },
+        "Sao Tome and Principe" : {
+          "type" : "long"
+        },
+        "Saudi Arabia" : {
+          "type" : "long"
+        },
+        "Senegal" : {
+          "type" : "long"
+        },
+        "Serbia" : {
+          "type" : "long"
+        },
+        "Seychelles" : {
+          "type" : "long"
+        },
+        "Sierra Leone" : {
+          "type" : "long"
+        },
+        "Singapore" : {
+          "type" : "long"
+        },
+        "Sint Maarten (Dutch part)" : {
+          "type" : "long"
+        },
+        "Slovakia" : {
+          "type" : "long"
+        },
+        "Slovenia" : {
+          "type" : "long"
+        },
+        "Somalia" : {
+          "type" : "long"
+        },
+        "South Africa" : {
+          "type" : "long"
+        },
+        "South Korea" : {
+          "type" : "long"
+        },
+        "South Sudan" : {
+          "type" : "long"
+        },
+        "Spain" : {
+          "type" : "long"
+        },
+        "Sri Lanka" : {
+          "type" : "long"
+        },
+        "Sudan" : {
+          "type" : "long"
+        },
+        "Suriname" : {
+          "type" : "long"
+        },
+        "Swaziland" : {
+          "type" : "long"
+        },
+        "Sweden" : {
+          "type" : "long"
+        },
+        "Switzerland" : {
+          "type" : "long"
+        },
+        "Syria" : {
+          "type" : "long"
+        },
+        "Taiwan" : {
+          "type" : "long"
+        },
+        "Tajikistan" : {
+          "type" : "long"
+        },
+        "Tanzania" : {
+          "type" : "long"
+        },
+        "Thailand" : {
+          "type" : "long"
+        },
+        "Timor" : {
+          "type" : "long"
+        },
+        "Togo" : {
+          "type" : "long"
+        },
+        "Trinidad and Tobago" : {
+          "type" : "long"
+        },
+        "Tunisia" : {
+          "type" : "long"
+        },
+        "Turkey" : {
+          "type" : "long"
+        },
+        "Turks and Caicos Islands" : {
+          "type" : "long"
+        },
+        "Uganda" : {
+          "type" : "long"
+        },
+        "Ukraine" : {
+          "type" : "long"
+        },
+        "United Arab Emirates" : {
+          "type" : "long"
+        },
+        "United Kingdom" : {
+          "type" : "long"
+        },
+        "United States" : {
+          "type" : "long"
+        },
+        "United States Virgin Islands" : {
+          "type" : "long"
+        },
+        "Uruguay" : {
+          "type" : "long"
+        },
+        "Uzbekistan" : {
+          "type" : "long"
+        },
+        "Vatican" : {
+          "type" : "long"
+        },
+        "Venezuela" : {
+          "type" : "long"
+        },
+        "Vietnam" : {
+          "type" : "long"
+        },
+        "Western Sahara" : {
+          "type" : "long"
+        },
+        "World" : {
+          "type" : "long"
+        },
+        "Yemen" : {
+          "type" : "long"
+        },
+        "Zambia" : {
+          "type" : "long"
+        },
+        "Zimbabwe" : {
+          "type" : "long"
+        },
+        "date" : {
+          "type" : "date",
+          "format" : "iso8601"
+        }
+      }
+    }
+  }

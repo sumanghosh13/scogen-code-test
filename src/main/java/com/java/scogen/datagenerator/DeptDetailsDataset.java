@@ -2,6 +2,7 @@ package com.java.scogen.datagenerator;
 
 import com.java.scogen.pojo.DeptPojo;
 import com.java.scogen.constants.DeptID;
+import org.apache.spark.sql.Column;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
@@ -22,6 +23,6 @@ public class DeptDetailsDataset {
     {
         List<DeptPojo> deptList =  Arrays.stream(DeptID.values()).map(x-> new DeptPojo(x.toString(),x.label))
                 .collect(Collectors.toList());
-        return spark.createDataFrame(deptList,DeptPojo.class);
+        return spark.createDataFrame(deptList,DeptPojo.class).filter(new Column(""));
     }
 }
